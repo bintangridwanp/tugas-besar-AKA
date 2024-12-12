@@ -1,5 +1,7 @@
 package algoritma_rekursif
 
+//import "fmt"
+
 // Fungsi untuk mencari data secara rekursif
 func RecursiveSequential(data []string, target string, index int) int {
     if index >= len(data) {
@@ -7,6 +9,7 @@ func RecursiveSequential(data []string, target string, index int) int {
     }
 
     if data[index] == target {
+        //fmt.Println(data[index])
         return index // Ditemukan
     }
 
